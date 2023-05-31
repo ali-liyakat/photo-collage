@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+#container{
+    border: 1px solid red;
+    display: flex;
+    height: 800px;
+    background: rgb(3, 62, 3);
+}
+#leftbox{
+    width: 50%;
+    border: 1px solid black;
+    
+}
+#rightbox{
+    width: 50%;
+    border: 1px solid green;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+h1,p{
+    text-align: center;
+    margin-top: 200px;
+}
+p{
+    width: 40%;
+    margin: auto;
+}
+#box{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2px;
+    background-position: top;
+    transition: all ease-in-out 1s;
+}
+#box:hover{
+    cursor: pointer;
+    background-position: bottom;
+}
+.one{
+    grid-row: span 2;
+}
+.two{
+    grid-column: span 2;
+}
+.four{
+    grid-row: span 2;
+}
+.five{
+    grid-column: span 2;
+}
+
+.seven{
+    grid-column: span 2;
+}
